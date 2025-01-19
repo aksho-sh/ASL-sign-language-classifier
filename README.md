@@ -73,7 +73,7 @@ The model was trained on a combination of publicly available datasets and a cust
 - **Sequence Padding:** Ensures uniform input lengths by padding or truncating videos to 128 frames.
 
 ### **2. Deep Learning Model**
-- **Architecture:** Bidirectional LSTM with 3 layers, 256 hidden units per layer, dropout regularization (40%), and a fully connected classification head.
+- **Architecture:** Simple Neural Network for static signs and for dynamic signs we have Bidirectional LSTM with 3 layers, 256 hidden units per layer, dropout regularization (40%), and a fully connected classification head.
 - **Training Strategy:**
   - Weighted cross-entropy loss to address class imbalance.
   - OneCycleLR scheduler for optimized learning dynamics.
@@ -81,6 +81,10 @@ The model was trained on a combination of publicly available datasets and a cust
 ---
 
 ## **Results**
+
+![alt text](image.png)
+<p style="text-align: center; font-size: 12px;"><em>fig - Demonstration of the script for dynamic sign language processing</em></p>
+
 ### **Performance Metrics**
 - **Overall Accuracy:** 97.25%
 - **Precision:** 97%
